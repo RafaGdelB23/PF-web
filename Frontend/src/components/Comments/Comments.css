@@ -1,0 +1,107 @@
+.formComment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.textArea-comment{
+    width: 50%;
+    height: 10em;
+    margin-top: 1em;
+    margin-left: 25%;
+}
+
+.formComment textarea {
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.formComment button {
+  margin-left: 46%;
+  margin-top: 2em;
+  border-radius: 1em;
+  color: black;
+  padding: 0.7em;
+  background-color: white;
+  }
+  
+  .formComment button:hover {
+
+    cursor: pointer;
+  }
+
+  .star-rating {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 44%;
+  }
+
+  @media (max-width: 768px) {
+
+    .formComment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .textArea-comment {
+      width: 75%;
+      height: 10em;
+      margin-top: 1em;
+      margin-left:8em;
+    }
+  
+    .formComment textarea {
+      border: 2px solid black;
+      padding: 1em;
+    }
+  
+    .formComment button {
+      display: flex;
+      justify-content: start;
+      margin-left: 42%;
+      margin-top: 2em;
+      border-radius: 1em;
+      color: black;
+      padding: 0.7em;
+      background-color: white;
+    }
+  
+    .formComment button:hover {
+      cursor: pointer;
+    }
+
+    .star-rating{
+      margin-left: 18em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formComment {
+      align-items: flex-start;
+    }
+  
+    .textArea-comment {
+      margin-top: -1em;
+      width: 75%;
+      height: 8em;
+      margin-left: 4.5em;
+    }
+  
+    .formComment button {
+      width: 28%;
+      margin-left: 2.5em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .star-rating {
+      margin-left: 30%;
+      margin-bottom: 1em;
+    }
+
+    .formComment button{
+      margin-left: 4em;
+    }
+  }

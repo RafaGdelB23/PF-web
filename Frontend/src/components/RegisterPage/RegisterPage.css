@@ -1,0 +1,183 @@
+.Register-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.RegisterUser {
+  width: 50%;
+  padding: 4em;
+}
+
+.RegisterUser h2 {
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.inputField-container input {
+  border-radius: 1em;
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+}
+
+.RegistrarseButton {
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  background-color: #130072;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.RegistrarseButton:hover {
+  cursor: pointer;
+  background-color: #007BFF;
+}
+
+.footer-links-register {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.footer-links-register a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links-register a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Register-image {
+  width: 50%;
+  object-fit: cover;
+  margin-right: -2em;
+}
+
+.Register-image img {
+  height: 48.5em;
+}
+
+.error {
+  color: red;
+  font-size: 0.75em;
+  height: 1.2em;
+  margin-top: -1em;
+  margin-left: 6em;
+  margin-bottom: 1.5em;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .Register-container {
+    flex-direction: row;
+    height: 40em;
+  }
+
+  .RegisterUser {
+    width: 50%;
+    padding: 1em;
+  }
+
+  .RegisterUser h2 {
+    margin-top: 3em;
+    margin-left: 1em;
+    font-size: large;
+  }
+
+  .inputField-container {
+    margin-left: -2em;
+  }
+
+  .RegistrarseButton {
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+    margin-left: 10em;
+    margin-bottom: -2em;
+  }
+
+  .footer-links-register a {
+    font-size: smaller;
+    margin-left: 1em;
+  }
+
+  .Register-image img {
+    height: 38em;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .Register-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+    margin-top: 1em;
+  }
+
+  .RegisterUser {
+    width: 100%;
+    padding: 2em;
+  }
+
+  .RegisterUser h2 {
+    font-size: medium;
+    margin-top: 2em;
+    margin-left: 0em;
+  }
+
+  .inputField-container {
+    margin-left: -3em;
+  }
+
+  .inputField-container input {
+    width: 75%;
+    margin-left: -2em;
+    margin-right: auto;
+  }
+
+  .RegistrarseButton {
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+    margin-left: 11em;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  .footer-links-register a {
+    font-size: small;
+    margin-top: 1em;
+  }
+
+  .Register-image img {
+    height: 0;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .error {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+}

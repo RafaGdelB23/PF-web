@@ -1,0 +1,101 @@
+.passwordConf-recovery-container {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 10rem auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .passwordConf-recovery-container h2 {
+    color: #202124;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .passwordConf-recovery-container p {
+    color: #5f6368;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .passwordConf-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5f6368;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1em;
+  }
+  
+  .submit-button:hover {
+    background-color: #0c5a9e;
+  }
+  
+  .submit-button:active {
+    background-color: #063c6d;
+  }
+  
+  input:focus, button:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 3px #4285f4;
+  }
+
+  @media (max-width: 480px) {
+
+    .passwordConf-recovery-container {
+      max-width: 20em;
+      margin-top: 8em;
+      margin-bottom: 3em;
+      padding: 1em;
+    }
+  
+    .passwordConf-recovery-container h2 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      margin-left: 0.4em;
+    }
+  
+    .passwordConf-recovery-container p {
+      font-size: 0.8em;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  
+    .input-field {
+      font-size: 1em;
+      padding: 0.5em 0.8em;
+    }
+  
+    .submit-button {
+      padding: 0.5em 1.2em;
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+    }
+  }
+  

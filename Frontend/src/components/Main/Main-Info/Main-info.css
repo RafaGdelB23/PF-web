@@ -1,0 +1,140 @@
+.videos {
+  margin-left: 3.5em;
+}
+
+.videos video {
+  width: 37em;
+  height: auto;
+  margin: 3em;
+  border-radius: 3em;
+}
+
+#MainText {
+  color: #13006f;
+  font-weight: 400;
+  margin-left: 0.75em;
+}
+
+#MainText2 {
+  color: #13006f;
+  text-align: center;
+  margin-top: 2.5em;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.mainImages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+  margin-top: 7em;
+  margin-left: 5em;
+  width: 90%;
+}
+
+.image-container {
+  flex: 1 1 calc(50% - 2em);
+  max-width: calc(50% - 2em);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  font-size: xx-large;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .videos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    margin-top: -10em;
+  }
+  .videos video {
+    width: 46%;
+    margin: 0.5em;
+  } 
+  
+  #MainText, #MainText2{
+    font-size: xx-large;
+  }
+
+  .mainImages-grid{
+    margin-left: 2.5em;
+  }
+  
+  .overlay{
+
+    border-radius: 1.8em;
+    font-size: large;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .videos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+    margin-top: -10em;
+  }
+
+  .videos video {
+    width: 80%;
+    margin-left: 2.5em;
+  }
+
+  #MainText, #MainText2 {
+    font-size: xx-large;
+    margin-left: 0em;
+  }
+
+  .mainImages-grid {
+    margin-left: 1.5em;
+    margin-top: 1em;
+  }
+
+  .image-container {
+    flex: 1 1 calc(100% - 2em);
+    max-width: 90%;
+  }
+
+  .image-container img{
+    width: 25em;
+    height: 20em;
+  }
+
+  .overlay {
+    border-radius: 2em;
+    font-size: smaller;
+  }
+}

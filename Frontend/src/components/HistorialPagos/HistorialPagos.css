@@ -1,0 +1,113 @@
+.historial-compras-container {
+  padding: 2em;
+  max-width: 75em;
+  margin: 0 auto;
+  border-radius: 1em;
+  margin-top: 8em;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.compras-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.compra-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1.25em;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.compra-image-container {
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+  border-radius: 0.5em;
+  flex-shrink: 0;
+  margin-left: 5em;  
+}
+
+.compra-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compra-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5em;
+  margin-top: -1em;
+}
+
+.compra-details h3 {
+  text-align: left;
+  font-size: 1.6em;
+  color: #007bff;
+  margin-bottom: 1em;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.compra-details p {
+  font-size: 1em;
+  color: #555;
+  margin: 0.5em -1.5em;
+}
+
+.compra-details p strong {
+  font-weight: bold;
+}
+
+.compra-details .hora {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+.no-compras {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+
+@media (max-width: 768px) {
+  .compra-item {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .compra-image-container {
+    width: 7.5em;
+    height: 7.5em;
+    margin-right: 0;
+    margin-bottom: 1.5em;
+    margin-left: 0; 
+  }
+
+  .compra-details h3 {
+    font-size: 1.4em;
+  }
+}

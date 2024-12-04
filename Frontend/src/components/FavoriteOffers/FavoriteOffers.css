@@ -1,0 +1,79 @@
+.FavoriteOffers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 8em;
+  margin-bottom: 30%;
+}
+.FavoriteOffers-container > div {
+  width: 50%;
+}
+.favoritesPackages h3,
+.FavoriteActivities h3 {
+  font-weight: 300;
+}
+.cards-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8.5em;
+  gap: 1em;
+}
+.cardText{
+    margin-left: 1.5em;
+    margin-top: 3em;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+
+  .FavoriteOffers-container {
+    flex-direction: column;
+    margin-top: 10em;
+    margin-left: 3em;
+    margin-bottom: 6em;
+  }
+
+  .FavoriteOffers-container > div {
+    width: 100%;
+  }
+
+  .FavoriteActivities h3, .favoritesPackages h3{
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .cards-favorites {
+    margin-left: 20%;
+    gap: 0.5em;
+  }
+
+  .cardText {
+    margin-left: 0;
+    margin-top: 1.5em;
+    font-size: medium;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .FavoriteOffers-container {
+    margin-top: 8em;
+    margin-bottom: 4em;
+  }
+
+  .FavoriteOffers-container > div {
+    width: 100%;
+  }
+
+  .cards-favorites {
+    margin-left: 1em;
+    gap: 0.5em;
+  }
+
+  .cardText {
+    margin-left: 0;
+    margin-top: 1.5em;
+    font-size: small;
+  }
+}

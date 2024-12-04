@@ -1,0 +1,48 @@
+.title-politicas {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.PoliticaPrivacidad-container .icono-politica {
+    
+    display: block;
+    margin: 0 auto 20px;
+    width: 50px;
+    height: auto;
+}
+.PoliticaPrivacidad-container{
+    margin-top: 100px; 
+}
+
+.Politicas {
+    margin: 0 auto;
+    width: 80%;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 100px;
+    font-weight: normal ;
+    
+    
+}
+.title{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: normal;
+    
+}
+.title-information{
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight:  bold;
+}
+
+@media (max-width: 768px) {
+
+    .title-politicas{
+        margin-top: -3em;
+    }
+}

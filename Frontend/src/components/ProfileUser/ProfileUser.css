@@ -1,0 +1,366 @@
+.dataProfile-container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 1.5em;
+  margin-top: 10em;
+  width: 45%;
+  margin-bottom: 2em;
+}
+
+.dataProfile-container h1 {
+  text-align: center;
+  margin-bottom: 1.25em;
+  font-weight: 300;
+}
+
+.userData-container {
+  padding: 1.25em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.userData-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25em;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.userData-header img {
+  width: 3.75em;
+  height: 3.75em;
+  margin-right: 1.25em;
+  margin-bottom: 0.625em;
+}
+
+.userData-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-top: -1.5em;
+}
+
+.userData-text h3 {
+  margin-left: 0em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.userData-text p {
+  margin: 0;
+  color: #555;
+}
+
+.userData-information {
+  display: flex;
+}
+
+.userData-information h3 {
+  margin-top: 0;
+  margin-left: -10em;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cross-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12em;
+}
+
+.horizontalBar,
+.verticalBar {
+  background-color: #000;
+}
+
+.horizontalBar {
+  width: 1em;
+  height: 0.3em;
+}
+
+.verticalBar {
+  margin-top: -0.65em;
+  width: 0.3em;
+  height: 1em;
+}
+
+.userData-datos {
+  display: none;
+  margin-top: 1.25em;
+}
+
+.userData-datos.open {
+  display: block;
+}
+
+.userData-datos label {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.3125em;
+  display: block;
+  color: #333;
+}
+
+.userData-datos input {
+  width: 100%;
+  padding: 0.625em;
+  margin-bottom: 0.9375em;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.3125em;
+  font-size: 1em;
+}
+
+.userData-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ChangePassButton {
+  width: 35%;
+  background-color: #130072;
+  color: white;
+  border: none;
+  padding: 0.625em 1.25em;
+  border-radius: 0.3125em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 32%;
+}
+
+.ChangePassButton button:hover {
+  background-color: #0056b3;
+}
+
+.buttonLogOut {
+  background-color: #700505;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1em;
+  cursor: pointer;
+  display: block;
+  width: 25%;
+  text-align: center;
+  margin-top: 1.25em;
+  margin-left: 14.3em;
+  margin-bottom: 2em;
+}
+
+.buttonLogOut:hover {
+  background-color: #c13d23;
+}
+
+.admin-sections{
+  display: flex;
+  flex-direction: row;
+  gap: 8em;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.admin-sections button {
+  padding: 0.6em;
+  background-color: #700505;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 0.3em;
+
+}
+
+.admin-sections button:hover {
+  background-color: #c13d23;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .dataProfile-container {
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  .dataProfile-container h1 {
+    margin-top: 2.5em;
+  }
+
+  .userData-header img {
+    width: 5em;
+    height: 5em;
+    margin-bottom: 2em;
+  }
+
+  .userData-text {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -4em;
+    margin-top: -2.2em;
+  }
+
+  .userData-header h3 {
+    padding-left: 2em;
+  }
+  
+  .userData-text {
+    margin-left: -5em;
+  }
+
+  .userData-buttons{
+    margin-left: 30%;
+  }
+
+  .userData-buttons button {
+    width: 15em;
+  }
+
+  .buttonLogOut {
+    margin-left: 17em;
+  }
+}
+
+@media (max-width: 768px) {
+  .userData-container {
+    width: 85%;
+    margin-left: 3.5em;
+  }
+
+  .userData-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .userData-header img {
+    margin-left: 2em;
+    margin-top: 0.5em;
+  }
+
+  .userData-text h3 {
+    font-size: 1.1em;
+    margin-left: 6em;
+    margin-top: -3.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .userData-text p {
+    margin-left: 10em;
+    margin-top: 0em;
+  }
+
+  .userData-information {
+    justify-content: flex-start;
+    margin-top: 0.625em;
+    margin-left: 9.5em;
+  }
+
+  .userData-information h3 {
+    font-size: medium;
+    margin-left: -18.7em;
+    margin-right: 6em;
+  }
+
+  .userData-datos input {
+    font-size: 0.9em;
+  }
+
+  .userData-buttons {
+    flex-direction: row;
+  }
+
+  .userData-buttons button {
+    margin: 0.32em;
+    font-size: 0.9em;
+  }
+
+  .buttonPassword {
+    font-size: 0.7em;
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dataProfile-container {
+    width: 100%;
+    margin-left: -1.5em;
+  }
+
+  .dataProfile-container h1 {
+    margin-left: 1.4em;
+  }
+
+  .userData-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .userData-header img {
+    width: 4em;
+    height: 4em;
+    margin-left: 0;
+  }
+
+  .userData-header h3 {
+    margin-left: -2.6em;
+  }
+
+  .userData-header p {
+    margin-left: 4.5em;
+  }
+
+  .userData-information {
+    margin-left: 2.6em;
+  }
+
+  .cross-menu {
+    margin-left: 2.5em;
+  }
+
+  .userData-information h3 {
+    margin-left: -8em;
+    font-size: 0.9em;
+  }
+
+  .userData-text {
+    margin-left: 2em;
+  }
+
+  .userData-text h3 {
+    font-size: 1em;
+  }
+
+  .userData-text p {
+    font-size: 0.9em;
+    margin-left: -2.7em;
+  }
+
+  .userData-buttons button {
+    margin-top: 1em;
+    width: 11em;
+    padding: 0.6em 0.9em;
+    margin-left: -0.7em;
+    font-size: 0.9em;
+  }
+
+  .buttonLogOut {
+    font-size: 0.9em;
+    margin-left: 11.5em;
+    width: 35%;
+  }
+
+  .admin-sections{
+    gap: 2em;
+    margin-left: 2.5em;
+  }
+  
+}

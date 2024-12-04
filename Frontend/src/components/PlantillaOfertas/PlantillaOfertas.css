@@ -1,0 +1,117 @@
+.activity-container, .package-container , .Offer-content{
+  margin-left: 4.5em;
+  margin-bottom: 6em;
+  margin-top: 5.5em;
+  white-space: nowrap;
+  max-width: 100%;
+  margin-right: 4em;
+}
+
+.package-container h3, .activity-container h3 {
+  color: #000855;
+  text-align: start;
+  padding: 2em;
+  font-weight: 400;
+}
+
+.package-container hr,  .activity-container hr {
+  width: 40%;
+  margin-left: 2em;
+  margin-top: -3.5em;
+  margin-bottom: -3em;
+  height: 0.15em;
+  background-color: #000855;
+  border: #000855;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: flex-start;
+
+}
+
+.subcategoryTitle h4 {
+  margin-left: 1.5em;
+  margin-top: 2em;
+  padding: 1em;
+  font-size: large;
+  text-align: center;
+  background-color: #000855;
+  color: white;
+  width: 15%;
+  border-radius: 0.6em;
+}
+
+@media (max-width: 768px) {
+
+  .package-container h3, .activity-container h3 {
+    margin-left: -2em;
+    margin-top: 4em;
+  }
+
+  .package-container hr, .activity-container hr {
+    width: 45%;
+    margin-left: -1.75em;
+    margin-top: -1em;
+  }
+
+  .package-container h3, .activity-container h3 {
+    font-size: 1.8em;
+    padding: 1em;
+  }
+
+  .subcategoryTitle h4 {
+    width: 40%;
+    font-size: 1.2em;
+    margin-left: -1.5em;
+  }
+
+  .cards {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-between;
+    margin-left: -3.2em;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+  .activity-container, .package-container , .Offer-content {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 10em;
+    margin-bottom: -7em;
+  }
+
+  .package-container h3, .activity-container h3 {
+    margin-left: 0;
+    font-size: 1.6em;
+    padding: 0.8em;
+  }
+
+  .package-container hr, .activity-container hr {
+    width: 60%;
+    margin-left: 1.2em;
+    margin-top: -1em;
+  }
+
+  .subcategoryTitle h4 {
+    width: 50%;
+    font-size: 1.1em;
+    margin-left: 1em;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 8em;
+  }
+
+}
